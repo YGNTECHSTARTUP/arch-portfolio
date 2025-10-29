@@ -16,9 +16,11 @@ housing while preserving the strong community bonds
  needs."
   
       images={[
+          "/sem71.png",
+                 "/sem72.png",
         "/sem73.png",
-        "/sem72.png",
-        "/sem71.png",
+ 
+      
         "/sem74.png",
         "/sem75.png"
       ]}

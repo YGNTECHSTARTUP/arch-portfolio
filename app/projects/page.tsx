@@ -94,6 +94,7 @@ const projects = [
   },
 ];
 
+
 export default function ProjectsPage() {
   // Separate hosted and GitHub-only projects
   const hostedProjects = projects.filter((project) => project.type === "hosted")

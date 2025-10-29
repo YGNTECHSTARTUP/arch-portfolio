@@ -1,7 +1,52 @@
 
 import Image from "next/image"
 
-
+const imagese = [
+  {
+    id:"1",
+    image:"/w1.jpg"
+  },
+  {
+    id:"2",
+    image:"/w2.jpg"
+  },    
+  {
+    id:"3",
+    image:"/w3.jpg"
+  } , 
+  {
+    id:"4",
+    image:"/w4.jpg" 
+  },
+  {
+    id:"5",
+    image:"/w5.jpg"
+  },
+  {
+    id:"6",
+    image:"/w6.jpg"
+  },
+  {
+    id:"7",
+    image:"/w7.jpg"
+  },
+  {
+    id:"8",
+    image:"/w8.jpg"
+  },
+  {
+    id:"9",
+    image:"/w9.jpg"
+  },
+  {
+    id:"10",
+    image:"/w10.jpg"
+  },
+  {
+    id:"11",
+    image:"/w11.jpg"
+  }
+]
 // Mock projects data (props copied from each Project{n}/page.tsx)
 const projects = [
   {
@@ -156,6 +201,24 @@ export default function ProjectsPage() {
           </div>
         </div> */}
       </section>
+          <div className="mb-16 px-8">
+              <h2 className="text-2xl font-semibold text-primary mb-6">Gallery</h2>
+              <div className="grid grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+                {imagese.map((image) => (
+                  <div
+                    key={image.id}
+                    className="relative aspect-video overflow-hidden rounded-lg border shadow-sm hover:shadow-md transition-shadow duration-200"
+                  >
+                    <Image
+                      src={image.image|| "/placeholder.svg"}
+                      alt={`Project image ${image.id + 1}`}
+                      fill
+                      className="object-cover  transition-transform duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
     </div>
   )
 }

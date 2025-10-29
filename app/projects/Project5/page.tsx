@@ -8,9 +8,11 @@ export default function ProjectShowcaseExample() {
  articulated in this facade view."
       video="/sem6video.mp4"
       images={[
+         "/sem61.png",
+                 "/sem62.png",
         "/sem63.png",
-        "/sem62.png",
-        "/sem61.png",
+
+       
         "/sem64.png",
         "/sem65.png"
       ]}
