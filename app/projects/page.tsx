@@ -33,29 +33,8 @@ const projects = [
     images: ["/sem41.png", "/sem42.png", "/sem43.png"],
     video: "sem4video",
   },
-  {
-    id: 3,
-    title: "SEA BREEZE ACADEMY: Learning by the Sea",
-    description:
-      "This project establishes a contemporary educational institution in Porbandar, Gujarat, inspired by the rhythmic patterns of the Arabian Sea.",
-    technologies: ["Sustainable Design", "Wave-Inspired Architecture", "Educational Infrastructure"],
-    image: "/p3 cover.jpg",
-    slug: "sea-breeze-academy",
-    type: "hosted",
-    images: ["/p32.png", "/p33.png", "/p31.png"],
-    video: "/pro3.mp4",
-  },
-  {
-    id: 4,
-    title: "AQUATIC FLIGHT: FIN TO FACADE",
-    description:
-      "The design uses an undulating, illuminated metallic canopy that creates a strong sense of fluid motion. It is a landmark structure that expresses biomorphic concepts through contrasting materials and dynamic form.",
-    technologies: ["Biomorphic Design", "Facade Engineering"],
-    image: "/sem3cov.png",
-    slug: "aquatic-flight",
-    type: "hosted",
-    images: ["/sem31.png"],
-  },
+ 
+
   {
     id: 5,
     title: "LIVING LIGHT: Shared Life",
@@ -89,6 +68,29 @@ const projects = [
     slug: "crumpled-canopy",
     type: "hosted",
     images: ["/sem83.jpg", "/sem82.jpg", "/sem81.jpg", "/sem84.jpg", "/sem85.jpg"],
+  },
+    {
+    id: 4,
+    title: "AQUATIC FLIGHT: FIN TO FACADE",
+    description:
+      "The design uses an undulating, illuminated metallic canopy that creates a strong sense of fluid motion. It is a landmark structure that expresses biomorphic concepts through contrasting materials and dynamic form.",
+    technologies: ["Biomorphic Design", "Facade Engineering"],
+    image: "/sem3cov.png",
+    slug: "aquatic-flight",
+    type: "hosted",
+    images: ["/sem31.png"],
+  },
+   {
+    id: 3,
+    title: "SEA BREEZE ACADEMY: Learning by the Sea",
+    description:
+      "This project establishes a contemporary educational institution in Porbandar, Gujarat, inspired by the rhythmic patterns of the Arabian Sea.",
+    technologies: ["Sustainable Design", "Wave-Inspired Architecture", "Educational Infrastructure"],
+    image: "/p3 cover.jpg",
+    slug: "sea-breeze-academy",
+    type: "hosted",
+    images: ["/p32.png", "/p33.png", "/p31.png"],
+    video: "/pro3.mp4",
   },
 ];
 

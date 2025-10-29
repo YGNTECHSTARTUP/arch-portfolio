@@ -18,6 +18,7 @@ export function Navigation() {
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/#contact" },
+    {name:"Workshops",path:"/workshops"}
   ]
 
   return (

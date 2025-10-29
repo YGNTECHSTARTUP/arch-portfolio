@@ -8,29 +8,7 @@ import Timeline from "@/components/Timeline"
 import { VerseOnMind } from "@/components/VerseOnMind"
 import SendMessage from "@/components/SendMessage"
 import Video from "next-video"
-const projects = [
-  {
-    id:1,
-    title:"The Essence of Design SPACE, FORM, FUNCTION",
-    imgurl:"p1 cover.jpg",
-    description:"This project explores the dynamic relationship between space, form, and function. Through an innovative design approach, we have created an interconnected spatial experience that adapts to natural site conditions, promoting fluid movement and interaction within the built environment."
-  },
-  {
-    id: 2,
-    title: "BREATHING NEW LIFE Daman's Heritage",
-    imgurl:"p2 cover.png",
-    description:
-      "Reimagining heritage through adaptive reuse, this project transforms a 100-year-old home in Daman into a vibrant art studio and residence. By preserving historical elements while integrating modern functionality, the design honors tradition while fostering creativity.",
-  },
-  {
-    id: 3,
-    title: "SEA BREEZE ACADEMY: Learning by the Sea",
-    imgurl: "p3 cover.jpg",
-    description:
-      "This coastal educational institution in Porbandar, Gujarat, draws inspiration from the rhythm of the Arabian Sea. With wave-like architectural forms and sustainable design, it offers a vibrant and inclusive learning environment for 480 students, harmonizing nature, form, and education.",
-  
-  }
-];
+
 
 
 // Mock workshops data
@@ -134,54 +112,47 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="container-custom section-spacing mt-10 md:-mt-20">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start relative">
-  <h2 className="md:hidden heading-lg mb-6 relative">
-  About
-  </h2>
-    {/* Video Section */}
-    <div id="intro" className="flex justify-center md:justify-start">
-      <div className="aspect-square w-[250px] md:w-[300px]">
-        <Video src="/intro.mp4" height={300} width={300} />
+     <section id="about" className="container-custom section-spacing mt-10 md:mt-0">
+  <div className="max-w-4xl mx-auto flex flex-col gap-10 text-center md:text-left">
+
+    {/* Heading */}
+    <h2 className="heading-lg relative">
+      About
+      <span className="absolute -z-10 text-[6rem] sm:text-[8rem] md:text-[10rem] font-bold text-muted/20 -top-12 sm:-top-16 md:-top-20 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 opacity-80">
+        01
+      </span>
+    </h2>
+      <div className="w-full flex justify-center">
+      <div className="aspect-video w-full max-w-3xl">
+        <Video src="/intro.mp4" height={400} width={800} className="rounded-lg object-cover" />
       </div>
     </div>
 
     {/* Text Content */}
-    <div className="md:col-span-2">
-      <h2 className="hidden heading-lg mb-6 md:block md:relative">
-        About
-        <span className="absolute -z-10 text-[6rem] sm:text-[8rem] md:text-[10rem] font-bold text-muted/20 -top-12 sm:-top-16 md:-top-20 -left-4 sm:-left-6 opacity-80">
-          01
-        </span>
-      </h2>
-
-      <p className="body-lg mb-6">
-        I&apos;m Lohitha Mendu, an architecture student with a strong passion for sustainable design. My focus is on creating 
-        environmentally responsible spaces using natural materials and minimalist principles.
-      </p>
-      <p className="body-lg mb-6">
-        I believe in continuous learning and actively seek opportunities to expand my knowledge, including participation in 
-        workshops on sustainable architecture. I am dedicated to exploring and experimenting with materials to find innovative solutions.
-      </p>
-      <p className="body-lg mb-10">
-        I am deeply passionate about environmental sustainability and believe that architecture has a critical role to play in 
-        creating a more sustainable future.
+    <div className="space-y-6">
+      <p className="body-lg">
+        I&apos;m Lohitha Mendu, an architecture student with a strong passion for sustainable design. 
+        My focus is on creating environmentally responsible spaces using natural materials and minimalist principles.
       </p>
 
-      {/* Optional Buttons */}
-      {/* 
-      <div className="flex flex-wrap gap-4">
-        <Button asChild variant="outline" size="lg">
-          <Link href="/portfolio">View My Work</Link>
-        </Button>
-        <Button asChild variant="outline" size="lg">
-          <Link href="/workshops">Explore Workshops</Link>
-        </Button>
-      </div> 
-      */}
+      <p className="body-lg">
+        I believe in continuous learning and actively seek opportunities to expand my knowledge, including participation 
+        in workshops on sustainable architecture. I am dedicated to exploring and experimenting with materials to find 
+        innovative solutions.
+      </p>
+
+      <p className="body-lg">
+        I am deeply passionate about environmental sustainability and believe that architecture has a critical role 
+        to play in creating a more sustainable future.
+      </p>
     </div>
+
+    {/* Landscape Video Section */}
+  
+
   </div>
 </section>
+
 
 
 
@@ -215,94 +186,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="container-custom section-spacing -mt-20">
-        <div className="flex flex-col md:flex-row justify-between items-baseline mb-16">
-          <h2 className="heading-lg relative">
-            Featured Projects
-            <span className="absolute -z-10 text-[10rem] font-bold text-muted/20 -top-20 -left-6 opacity-80">02</span>
-          </h2>
-          <Link href="/projects" className="link-underline text-lg text-muted-foreground mt-4 md:mt-0">
-            View All Projects
-          </Link>
-        </div>
-
-        {/* <div className="grid gap-24">
-          {[1, 2, 3].map((project) => (
-            <div key={project} className="group">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <span className="text-8xl font-bold text-muted/30 group-hover:text-muted/50 transition-colors">
-                    0{project}
-                  </span>
-                  <h3 className="text-4xl font-bold mb-6 -mt-8 group-hover:translate-x-2 transition-transform">
-                    Project {project}
-                  </h3>
-                  <p className="text-xl text-muted-foreground mb-8">
-                    A detailed description of this project, including the problem it solves, the technologies used, and
-                    the challenges overcome during development.
-                  </p>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="lg"
-                    className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                  >
-                    <Link href={`/projects/project-${project}`}>View Project</Link>
-                  </Button>
-                </div>
-                <div className="overflow-hidden rounded-lg">
-                  <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
-                    <Image
-                      src={`/placeholder.svg?height=270&width=480`}
-                      alt={`Project ${project}`}
-                      width={480}
-                      height={270}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
-          <div className="grid gap-24">
-      {projects.map((project) => (
-        <div key={project.id} className="group">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-8xl font-bold text-muted/30 group-hover:text-muted/50 transition-colors">
-                0{project.id}
-              </span>
-              <h3 className="text-4xl font-bold mb-6 -mt-8 group-hover:translate-x-2 transition-transform">
-                {project.title}
-              </h3>
-              <p className="text-xl text-muted-foreground mb-8">{project.description}</p>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-              >
-                <Link href={`/projects/Project${project.id}`}>View Project</Link>
-              </Button>
-            </div>
-            <div className="overflow-hidden rounded-lg">
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
-                <Image
-                  src={`/${project.imgurl}`}
-                  alt={project.title}
-                  width={480}
-                  height={270}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  
-      </section>
+      
 
       {/* Workshops Section */}
       {/* <section className="container-custom section-spacing">
