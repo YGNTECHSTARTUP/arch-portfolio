@@ -10,7 +10,7 @@ interface ProjectShowcaseProps {
   className?: string
 }
 
-export default function ProjectShowcaseee({
+export default function ProjectShow({
   coverImage,
   title,
   mainDescription,
@@ -34,11 +34,8 @@ export default function ProjectShowcaseee({
       {/* Concept and Description */}
      
 
-     <div
-  id="vid"
-  className="mx-auto w-full flex justify-center items-center py-12 md:py-20"
->
-  <div className="w-full max-w-4xl aspect-video px-4">
+   <div id="vid" className="mx-auto flex justify-center items-center min-h-screen px-4">
+  <div className="w-full max-w-[400px] aspect-[9/16]">
     <Video
       src={video}
       className="w-full h-full object-cover rounded-xl shadow-lg"
