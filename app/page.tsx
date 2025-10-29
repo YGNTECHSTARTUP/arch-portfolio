@@ -82,6 +82,9 @@ export default function HomePage() {
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
                 <Link href="/projects">View Projects</Link>
               </Button>
+                 <Button asChild variant="outline" size="lg" className="md:hidden text-lg px-8">
+                <Link href="/workshops">Workshops</Link>
+              </Button>
             </div>
           </div>
           <div className="relative">
@@ -123,10 +126,21 @@ export default function HomePage() {
       </span>
     </h2>
       <div className="w-full flex justify-center">
-      <div className="aspect-video w-full max-w-3xl">
-        <Video src="/intro.mp4" height={400} width={800} className="rounded-lg object-cover" />
-      </div>
-    </div>
+ <div className="w-full flex justify-center">
+<div className="w-full flex justify-center">
+  <div className="w-full max-w-3xl aspect-[9/16] lg:aspect-video overflow-hidden rounded-lg">
+    <Video
+      src="/intro.mp4"
+      className="w-full h-full object-cover rounded-lg"
+      controls
+    />
+  </div>
+</div>
+
+</div>
+
+</div>
+
 
     {/* Text Content */}
     <div className="space-y-6">
