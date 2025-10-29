@@ -55,7 +55,7 @@ const projects = [
     description:
       "The Auroville workshop was truly a turning point for me. It was exhilarating to move beyond theory and get my hands into the materials—to genuinely feel the potential of sustainable construction. Working with techniques like Compressed Stabilized Earth Blocks (CSEB), Rammed Earth, and even the delicacy of Ferrocement was incredibly rewarding. Mastering the construction of arches and vaults didn't just teach me about structure; it expanded my intellectual understanding of resourceful design. This immersion solidified my passion for low-embodied-energy systems and has made me a much more informed and confident.   ",
     technologies: ["Architecture", "Modular Design", "Sustainability"],
-    image: "/work1.png",
+    image: "/work2.png",
     slug: "essence-of-design",
     type: "hosted",
   },
@@ -65,7 +65,7 @@ const projects = [
     description:
       "My time at Jeev Jantu was exhilarating! Spending 15 days in the deep forest offered an intensive, holistic learning experience that made me a much more capable designer. Every moment was a lesson: mastering soil tests and Cob construction, executing detailed lime plaster and floor finishes, and integrating site elements like pond plastering. It was a wonderfully immersive challenge that exponentially grew my knowledge and confidence in creating genuinely sustainable structures.",
        technologies: ["Architecture", "Modular Design", "Sustainability"],
-    image: "/work2.png",
+    image: "/work1.png",
     slug: "essence-of-design",
     type: "hosted",
   },
